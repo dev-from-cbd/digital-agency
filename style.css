@@ -5,20 +5,24 @@
   --sectionclrsec: #40286a;
   --boxshadow: #ff5990;
 }
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
-  text-transform: capitalize;
   font-family: "Montserrat", sans-serif;
+
+  /* text-transform: capitalize; */
+  text-transform: none;
 }
+
 html {
   font-size: 62.5%;
   overflow-x: hidden;
 }
 .main-container {
-  background: url(images/back.png);
+  background: url(images/office.jpg);
   width: 100%;
   height: 100vh;
   background-position: center;
@@ -37,14 +41,25 @@ html {
   right: 0;
   z-index: 1000;
 }
+
 .header #logo img {
   width: 20rem;
+
+  background: gray;
+  opacity: 0.8;
+  filter: alpha(Opacity=80); /* IE */
+
+  border-radius: 1rem;
 }
+
 .navbar a {
   font-size: 1.5rem;
-  color: white;
   margin-left: 1rem;
+
+  color: darkgreen;
+  font-weight: bold;
 }
+
 .navbar.active {
   left: 0;
 }
@@ -97,18 +112,23 @@ html {
   left: 20%;
   width: 50%;
 }
+
 .main h2 {
-  color: white;
   font-size: 40px;
   font-weight: bold;
+
+  color: pink;
 }
+
 .main p {
-  color: white;
   font-size: 1.5rem;
   width: 80%;
   margin-top: 10px;
   margin-bottom: 25px;
+
+  color: var(--btnclr);
 }
+
 .main a {
   padding: 1rem 3rem;
   color: white;
@@ -118,6 +138,7 @@ html {
   display: inline-block;
   margin-right: 1rem;
 }
+
 .first-btn {
   background: var(--btnclr);
 }
@@ -159,13 +180,16 @@ html {
   font-size: 1.5rem;
   margin-bottom: 25px;
 }
+
 .map-btn {
   padding: 1.5rem 4rem;
   border-radius: 15px;
   background: var(--btnclr);
   color: white;
-  box-shadow: 0 0.8rem 0.1rem var(--boxshadow);
+  /* box-shadow: 0 0.8rem 0.1rem var(--boxshadow); */
+  font-size: 1.5rem;
 }
+
 .image-row {
   text-align: center;
 }
@@ -173,47 +197,63 @@ html {
   padding: 2rem 0;
   padding-bottom: 0;
 }
+
 .main-earning {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
+
 .inner-earning {
   flex: 1 1 300px;
   padding: 4rem 1rem;
   text-align: center;
 }
+
 .inner-earning img {
   transform: translateY(0);
   transition: 0.5s;
 }
+
 .inner-earning:hover img {
   transform: translateY(10px);
 }
+
 .inner-earning h2 {
   color: white;
   font-size: 2rem;
   padding: 0.5rem 0;
 }
+
 .inner-earning h3 {
   color: white;
   font-size: 1.7rem;
 }
+
 .inner-earning p {
   color: white;
   font-size: 1.5rem;
   padding: 1rem 1rem;
 }
+
 .inner-earning:nth-child(1) {
   background: var(--sectionclrsec);
 }
+
 .inner-earning:nth-child(2) {
   background: var(--sectionclr);
 }
+
 .inner-earning:nth-child(3) {
   background: var(--sectionclrsec);
 }
+
+.icon-earning {
+  /* width: 80px; */
+  height: 100px;
+}
+
 .background-image {
   background: url(images/backgroundimage.png);
   width: 100%;
@@ -243,6 +283,7 @@ html {
   padding: 0.5rem 8rem;
   margin-bottom: 25px;
 }
+
 .background-image-btn {
   padding: 1.5rem 4rem;
   border-radius: 15px;
@@ -250,8 +291,10 @@ html {
   color: white;
   text-align: center;
   margin-left: 40px;
-  box-shadow: 0 0.8rem 0.1rem var(--boxshadow);
+  /* box-shadow: 0 0.8rem 0.1rem var(--boxshadow); */
+  font-size: 1.5rem;
 }
+
 .video-section {
   padding: 4rem 7%;
 }
@@ -304,11 +347,15 @@ p {
   padding: 5rem 7%;
   background: rgb(217, 249, 255);
 }
-.our-recent-work h1 {
+
+.our-recent-work h2 {
   font-size: 40px;
   text-align: center;
   margin-bottom: 20px;
+
+  margin-top: 4rem;
 }
+
 .main-recent {
   display: flex;
   justify-content: center;
@@ -329,7 +376,7 @@ p {
   transform: translateY(-20px);
 }
 .testimonial {
-  background: url(images/testimonials.png);
+  background: url(images/footer.jpg);
   width: 100%;
   height: 80vh;
   background-size: cover;
@@ -337,6 +384,7 @@ p {
   background-repeat: no-repeat;
   position: relative;
 }
+
 .main-testimonial {
   width: 40%;
   left: 10%;
@@ -347,20 +395,25 @@ p {
   transform: translateY(0);
   transition: 0.5s;
 }
+
 .main-testimonial:hover {
   transform: translateY(15px);
 }
-.main-testimonial h1 {
-  color: white;
+
+.main-testimonial h2 {
+  color: darkgreen;
   font-size: 30px;
   padding: 1rem 0;
 }
+
 .main-testimonial p {
-  color: white;
+  color: green;
+
   font-size: 1.5rem;
   padding: 2rem 0;
   margin-bottom: 20px;
 }
+
 .main-testimonial i {
   color: var(--btnclr);
   font-size: 1.5rem;
