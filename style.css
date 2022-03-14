@@ -304,12 +304,15 @@ html {
   align-items: center;
   flex-wrap: wrap;
 }
+
 .inner-video {
   flex: 1 1 45rem;
 }
+
 .inner-video img {
-  width: 70%;
+  width: 36vw;
 }
+
 .inner-video h2 {
   font-size: 30px;
   padding: 0.5rem 4rem;
